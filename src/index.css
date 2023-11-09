@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,154 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.flag{
+  display: block;
+  width: 3.8%;
+  height: 12%;
+  background-color: black;
+  opacity: 10%;
+  border-radius: 20%;
+}
+
+.flag:hover
+{
+  opacity: 0;
+}
+
+.umma{
+  position: absolute;
+  top: 1%;
+  left: 25.6%;
+}
+
+.mardin{
+  position: absolute;
+  top: 0.5%;
+  left: 51%;
+}
+
+.bargusia{
+  position: absolute;
+  top: 0%;
+  left: 66.4%;
+}
+
+.umme_rock{
+  position: absolute;
+  top: 20.7%;
+  left: 28.4%;
+}
+
+.los_gemelos{
+  position: absolute;
+  top: 14.5%;
+  left: 39%;
+}
+
+.lagash{
+  position: absolute;
+  top: 14%;
+  left: 71.8%;
+}
+
+.enki{
+  position: absolute;
+  top: 40.4%;
+  left: 23.3%;
+}
+
+.alejandria{
+  position: absolute;
+  top: 35%;
+  left: 46.2%;
+}
+
+.utu{
+  position: absolute;
+  top: 53.6%;
+  left: 23.7%;
+}
+
+.town_watch{
+  width: 3.8%;
+  height: 8%;
+  position: absolute;
+  top: 60.4%;
+  left: 45.9%;
+}
+
+.ilerda{
+  position: absolute;
+  top: 60.7%;
+  left: 58.2%;
+}
+
+.abela{
+  position: absolute;
+  top: 59%;
+  left: 62.6%;
+}
+
+.kish{
+  position: absolute;
+  top: 54%;
+  left: 71%;
+}
+
+.abismo_helmm{
+  position: absolute;
+  top: 78.9%;
+  left: 22.9%;
+}
+
+.vacceos{
+  width: 3.2%;
+  height: 11%;
+  position: absolute;
+  top: 72.4%;
+  left: 42.2%;
+}
+
+.hierros{
+  width: 3.4%;
+  height: 9%;
+  position: absolute;
+  top: 70.5%;
+  left: 45.6%;
+}
+
+.outlaw_camp{
+  position: absolute;
+  top: 79.7%;
+  left: 48.6%;
+}
+
+.bastetania{
+  position: absolute;
+  top: 77%;
+  left: 58.8%;
+}
+
+.andosia{
+  position: absolute;
+  top: 70.7%;
+  left: 72.3%;
+}
+
+.popup
+{
+  width: 10%;
+  height: 20%;
+  margin-left: 5%;
+  background-color: burlywood;
+  z-index: 1;
 }

@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Flag from './components/Flag'
+import Map from './components/Map'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  let castles = ['umma', 'mardin', 'bargusia', 'umme_rock', 'los_gemelos', 'lagash', 'enki', 'alejandria', 'utu', 'town_watch', 'ilerda', 'abela', 'kish', 'abismo_helmm', 'vacceos', 'outlaw_camp', 'bastetania', 'andosia'];
+  return(
+    <div>
+      <Map/>
+      {castles.map(castle => (
+        <Flag location={castle}/>
+      ))}
     </div>
-  );
+    );
 }
 
 export default App;
