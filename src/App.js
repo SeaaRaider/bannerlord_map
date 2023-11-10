@@ -19,6 +19,7 @@ function App() {
     "kish",
     "abismo_helmm",
     "vacceos",
+    "hierros",
     "outlaw_camp",
     "bastetania",
     "andosia",
