@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: black;
+  background-color: rgb(220, 220, 220);
 }
 
 code {
@@ -149,11 +149,28 @@ code {
   left: 72.3%;
 }
 
-.popup
-{
+.popup{
   width: 10%;
   height: 20%;
   margin-left: 5%;
   background-color: burlywood;
   z-index: 1;
+}
+
+.ornaments{
+  z-index: 0;
+  opacity: 50%;
+}
+
+.bottomleft,
+.topleft{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.bottomright,
+.topright{
+  /* none */
 }
