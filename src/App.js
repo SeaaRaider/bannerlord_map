@@ -1,6 +1,7 @@
 import Map from "./components/Map";
 import LoopCastles from "./components/LoopCastles";
 import Menu from "./components/Menu/Menu";
+import LoopResources from "./components/LoopResources";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Menu/>
       <div className="col position-relative">
         <Map />
+        <LoopResources/>
         <LoopCastles />
       </div>
     </div>
