@@ -28,7 +28,7 @@ export const RESOURCES_DATA = [
     },
   
     {
-      id: 'stone/clay',
+      id: 'stone',
       image: '/images/stone.png',
       name: 'Stone / Clay',
       number: '7'
