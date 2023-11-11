@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import Popup from "./Popup";
+import classes from "./Flag.module.css"
+import Popup from "../Popup/Popup";
 
 function Flag(props) {
   const [popupIsOpen, setPopupIsOpen] = useState(false);
@@ -16,8 +17,8 @@ function Flag(props) {
 
   return (
     <div>
-      <div className={props.location + " flag"} onClick={PopupHandler}></div>
-      <div>{popupIsOpen && <Popup location={props.location + " popup"} />}</div>
+      <div className={classes[props.location] + " " + classes.flag} onClick={PopupHandler}></div>
+      <div>{popupIsOpen && <Popup location={props.location} />}</div>
     </div>
   );
 }
