@@ -2,10 +2,10 @@ import ResourceList from "../ResourceList/ResourceList";
 
 import { RESOURCES_DATA } from "../../resourceData";
 
-function Menu() {
+function Menu({ResourceHandler}) {
   return (
     <div className="col col-lg-2 text-bg-secondary p-3 position-relative">
-        <ResourceList resources={RESOURCES_DATA}/>
+        <ResourceList ResourceHandler={ResourceHandler} resources={RESOURCES_DATA}/>
     </div>
   );
 }

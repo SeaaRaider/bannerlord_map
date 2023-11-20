@@ -1,4 +1,4 @@
-import Flag from "./Flag/Flag";
+import Flag from "../FlagMarks/FlagMarks";
 
 function LoopCastles() {
   let castles = [

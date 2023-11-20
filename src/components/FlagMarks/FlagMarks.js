@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import classes from "./Flag.module.css"
+import classes from "./FlagMarks.module.css"
 import Popup from "../Popup/Popup";
 
 function Flag(props) {

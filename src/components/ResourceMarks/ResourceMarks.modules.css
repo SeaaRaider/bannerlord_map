@@ -29,6 +29,11 @@
     left:65.8%;
 }
 
+.bank4{
+    top:5.4%;
+    left:70.2%;
+}
+
 .gold_bar0{
     top:-5%;
     left:0%;
@@ -42,6 +47,36 @@
 .gold_ore1{
     top:63%;
     left:31.6%;
+}
+
+.gold_ore2{
+    top:7.5%;
+    left:37.6%;
+}
+
+.gold_ore3{
+    top:17%;
+    left:66%;
+}
+
+.gold_ore4{
+    top:38%;
+    left:39%;
+}
+
+.gold_ore5{
+    top:30.2%;
+    left:56.5%;
+}
+
+.gold_ore6{
+    top:33%;
+    left:72%;
+}
+
+.gold_ore7{
+    top:75.3%;
+    left:63.1%;
 }
 
 .iron_ore0{

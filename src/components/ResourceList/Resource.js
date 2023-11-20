@@ -1,9 +1,9 @@
 import classes from './Resource.module.css'
 
-function Resource(props) {
+function Resource({ResourceHandler, image, name, id}) {
   return (
     <li className={classes.bar}>
-      <img className={classes.icon} src={props.image}/>{props.name}
+      <button onClick={ResourceHandler}><img className={classes.icon} src={image}/>{name}</button>
     </li>
   );
 }
