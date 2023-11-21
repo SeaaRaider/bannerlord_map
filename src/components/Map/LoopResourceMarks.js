@@ -1,26 +1,26 @@
 import { RESOURCES_DATA } from "../../resourceData";
 
-import ResourceMarks from "./ResourceMarks/ResourceMarks";
+import classes from './LoopResourceMarks.modules.css'
 
 function LoopResources(props) {
+  
+  const render = (data) => {
+    const listItems = [];
+    for (let i = 0; i < data.number; i++) {
+
+        listItems.push(<img className={data.id + i + " icon"} id="icon" key={i} src={data.image}/>);
+    }
+    return listItems;
+  };
   return (
     <div>
-      {RESOURCES_DATA.map((resource) => (
-        <ResourceMarks
-          key={resource.id}
-          id={resource.id}
-          image={resource.image}
-          name={resource.name}
-          number={resource.number}
-          bank={props.bank}
-          gold_bar={props.gold_bar}
-          gold_ore={props.gold_ore}
-          iron_ore={props.iron_ore}
-          stone={props.stone}
-        />
+      {RESOURCES_DATA.map((e) => (
+        <div>{props.bank[e.id] && render(e)}</div>
       ))}
     </div>
+    
   );
+
 }
 
 export default LoopResources;

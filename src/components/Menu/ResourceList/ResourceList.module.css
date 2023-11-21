@@ -1,3 +1,16 @@
 .list{
     list-style-type: none
 }
+
+.bar{
+
+}
+
+.bar:hover{
+    opacity: 50%;
+}
+
+.icon{
+    width: 15%;
+    margin: 5% 5% 5% 0;
+}
