@@ -4,7 +4,7 @@ import { RESOURCES_DATA } from "./resourceData";
 
 import Map from "./components/Map/Map";
 import Menu from "./components/Menu/Menu";
-import LoopResources from "./components/Map/LoopResourceMarks";
+import LoopResourceMarks from "./components/Map/LoopResourceMarks";
 
 function App() {
   const [bank, setBankIsOpen] = useState(true);
@@ -27,7 +27,7 @@ function App() {
       <Menu ResourceHandler={ResourceHandler}/>
       <div className="col position-relative">
         <Map/>
-        <LoopResources bank={bank} gold_bar={gold_bar} gold_ore={gold_ore} iron_ore={iron_ore} stone={stone}/>
+        <LoopResourceMarks bank={bank} gold_bar={gold_bar} gold_ore={gold_ore} iron_ore={iron_ore} stone={stone}/>
       </div>
     </div>
   );

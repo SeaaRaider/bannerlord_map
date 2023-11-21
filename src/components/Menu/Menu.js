@@ -1,4 +1,4 @@
-import ResourceList from "../ResourceList/ResourceList";
+import ResourceList from "./ResourceList/ResourceList";
 
 import { RESOURCES_DATA } from "../../resourceData";
 

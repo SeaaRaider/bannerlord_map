@@ -1,6 +1,6 @@
 import { RESOURCES_DATA } from "../../resourceData";
 
-import ResourceMarks from "../ResourceMarks/RespourceMarks";
+import ResourceMarks from "./ResourceMarks/ResourceMarks";
 
 function LoopResources(props) {
   return (

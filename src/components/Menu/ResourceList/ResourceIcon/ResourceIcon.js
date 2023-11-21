@@ -1,4 +1,4 @@
-import classes from './Resource.module.css'
+import classes from './ResourceIcon.module.css'
 
 function Resource({ResourceHandler, image, name, id}) {
   return (

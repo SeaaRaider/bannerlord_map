@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import classes from "./FlagMarks.module.css"
-import Popup from "../Popup/Popup";
+import classes from "./FlagClickableMarks.module.css"
+import Popup from "./Popup/Popup";
 
 function Flag(props) {
   const [popupIsOpen, setPopupIsOpen] = useState(false);

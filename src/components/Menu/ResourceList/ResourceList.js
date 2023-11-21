@@ -1,13 +1,13 @@
 import classes from './ResourceList.module.css'
 
-import Resource from "./Resource";
+import ResourceIcon from "./ResourceIcon/ResourceIcon";
 
 function ResourceList({ResourceHandler, resources}) {
 
   return (
     <ul className={classes.list}>
       {resources.map((resource) => (
-        <Resource
+        <ResourceIcon
           key={resource.id}
           id={resource.id}
           image={resource.image}
