@@ -1,4 +1,4 @@
-import Flag from "./Flag/Flag";
+import FlagClickableMarks from "./FlagClickableMarks/FlagClickableMarks";
 
 function LoopCastles() {
   let castles = [
@@ -25,7 +25,7 @@ function LoopCastles() {
   return (
     <div>
       {castles.map((castle) => (
-        <Flag location={castle} />
+        <FlagClickableMarks location={castle} />
       ))}
     </div>
   );

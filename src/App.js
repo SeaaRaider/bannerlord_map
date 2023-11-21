@@ -1,16 +1,33 @@
-import Map from "./components/Map";
-import LoopCastles from "./components/LoopCastles";
+import { useState } from "react";
+
+import { RESOURCES_DATA } from "./resourceData";
+
+import Map from "./components/Map/Map";
 import Menu from "./components/Menu/Menu";
-import LoopResources from "./components/LoopResources";
+import LoopResourceMarks from "./components/Map/LoopResourceMarks";
 
 function App() {
+  const [bank, setBankIsOpen] = useState([]);
+
+  function ResourceHandler(resource) {
+    let loading = bank.slice();
+    if (bank) {
+      loading[resource.id] = true;
+    } 
+    // else {
+    //   loading[resource.id] = false;
+    // }
+    setBankIsOpen(loading);
+  }
+
   return (
     <div className="row mx-5 my-5">
-      <Menu/>
+      <Menu ResourceHandler={ResourceHandler} />
       <div className="col position-relative">
         <Map />
-        <LoopResources/>
-        <LoopCastles />
+        <LoopResourceMarks
+          bank={bank}
+        />
       </div>
     </div>
   );
