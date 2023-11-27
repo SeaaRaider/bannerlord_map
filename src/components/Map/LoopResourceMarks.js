@@ -15,7 +15,7 @@ function LoopResources(props) {
   return (
     <div>
       {RESOURCES_DATA.map((e) => (
-        <div>{props.bank[e.id] && render(e)}</div>
+        <div>{props.visibility[e.id] && render(e)}</div>
       ))}
     </div>
     

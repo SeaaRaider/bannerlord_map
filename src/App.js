@@ -1,23 +1,18 @@
 import { useState } from "react";
 
-import { RESOURCES_DATA } from "./resourceData";
-
 import Map from "./components/Map/Map";
 import Menu from "./components/Menu/Menu";
 import LoopResourceMarks from "./components/Map/LoopResourceMarks";
 
 function App() {
-  const [bank, setBankIsOpen] = useState([]);
+  const [visibility, setVisibility] = useState([]);
 
   function ResourceHandler(resource) {
-    let loading = bank.slice();
-    if (bank) {
+    let loading = visibility.slice();
+    if (visibility) {
       loading[resource.id] = true;
     } 
-    // else {
-    //   loading[resource.id] = false;
-    // }
-    setBankIsOpen(loading);
+    setVisibility(loading);
   }
 
   return (
@@ -26,7 +21,7 @@ function App() {
       <div className="col position-relative">
         <Map />
         <LoopResourceMarks
-          bank={bank}
+          visibility={visibility}
         />
       </div>
     </div>
