@@ -1,11 +1,17 @@
 import classes from "./ResourceList.module.css";
 
-function ResourceList({ ResourceHandler, resources }) {
+function ResourceList({ resourceHandler, resources }) {
   return (
     <ul className={classes.list}>
-      {resources.map((resource) => (
-        <li key={resource.id} id={resource.id} className={classes.bar + " " + classes.active}>
-          <button onClick={()=>ResourceHandler(resource )} className={classes.bar}><img className={classes.icon} src={resource.image}/>{resource.name}</button>
+      {resources.map((res, i) => (
+        <li
+          key={res.id}
+          id={res.id}
+          className={classes.bar + " " + classes.active}
+          onClick={() => resourceHandler(i)}
+        >
+          <img className={classes.icon} src={res.image} />
+          {res.name}
         </li>
       ))}
     </ul>
