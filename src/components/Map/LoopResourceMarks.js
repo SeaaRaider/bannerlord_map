@@ -1,8 +1,8 @@
 import { RESOURCES_DATA } from "../../resourceData";
-
 import classes from "./LoopResourceMarks.modules.css";
 
 function LoopResources(props) {
+  
   var resources = [];
 
   const render = (data) => {
@@ -11,7 +11,6 @@ function LoopResources(props) {
       listItems.push(
         <img
           className={data.id + i + " icon"}
-          id="icon"
           key={i}
           src={data.image}
         />
