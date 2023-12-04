@@ -1,127 +1,140 @@
+.popup {
+  text-align: center;
+  font-size: 0.8vw;
+  width: 10%;
+  height: 20%;
+  margin-left: 5%;
+  padding-top: 1.4%;
+  background-color: #bbab8c;
+  border: 1px solid black;
+  border-radius: 2%;
+  z-index: 1;
+  opacity: 85%;
+}
+
+.popup:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 0.9vw solid #bbab8c;
+  border-top: 1vh solid transparent;
+  border-bottom: 1vh solid transparent;
+  right: 101%;
+  top: 10%;
+}
+
 .umma {
-    position: absolute;
-    top: 2.3%;
-    left: 25.9%;
-  }
-  
-  .mardin {
-    position: absolute;
-    top: 1.3%;
-    left: 51.35%;
-  }
-  
-  .bargusia {
-    position: absolute;
-    top: 0%;
-    left: 66.75%;
-  }
-  
-  .umme_rock {
-    position: absolute;
-    top: 22.2%;
-    left: 28.7%;
-  }
-  
-  .los_gemelos {
-    position: absolute;
-    top: 15.45%;
-    left: 39.3%;
-  }
-  
-  .lagash {
-    position: absolute;
-    top: 14.41%;
-    left: 72.15%;
-  }
-  
-  .enki {
-    position: absolute;
-    top: 41.75%;
-    left: 23.55%;
-  }
-  
-  .alejandria {
-    position: absolute;
-    top: 36.25%;
-    left: 46.55%;
-  }
-  
-  .utu {
-    position: absolute;
-    top: 55.1%;
-    left: 24%;
-  }
-  
-  .town_watch {
-    position: absolute;
-    top: 60.9%;
-    left: 46.2%;
-  }
-  
-  .ilerda {
-    position: absolute;
-    top: 62%;
-    left: 58.55%;
-  }
-  
-  .abela {
-    position: absolute;
-    top: 60.1%;
-    left: 62.9%;
-  }
-  
-  .kish {
-    position: absolute;
-    top: 54.6%;
-    left: 71.4%;
-  }
-  
-  .abismo_helmm {
-    position: absolute;
-    top: 80.3%;
-    left: 23.2%;
-  }
-  
-  .vacceos {
-    position: absolute;
-    top: 72.7%;
-    left: 42.45%;
-  }
-  
-  .hierros {
-    height: 7.1%;
-    position: absolute;
-    top: 69.2%;
-    left: 45.55%;
-  }
-  
-  .outlaw_camp {
-    position: absolute;
-    top: 80.9%;
-    left: 48.9%;
-  }
-  
-  .bastetania {
-    position: absolute;
-    top: 77.65%;
-    left: 59.2%;
-  }
-  
-  .andosia {
-    position: absolute;
-    top: 71.85%;
-    left: 72.7%;
-  }
-  
-  .popup {
-    text-align: center;
-    font-size: 0.8vw;
-    width: 10%;
-    height: 20%;
-    margin-left: 5%;
-    padding-top: 1.4%;
-    background-color: #d2aa77;
-    border-radius: 2%;
-    z-index: 1;
-    opacity: 90%;
-  }
+  position: absolute;
+  top: 2.3%;
+  left: 25.9%;
+}
+
+.mardin {
+  position: absolute;
+  top: 1.3%;
+  left: 51.35%;
+}
+
+.bargusia {
+  position: absolute;
+  top: 0%;
+  left: 66.75%;
+}
+
+.umme_rock {
+  position: absolute;
+  top: 22.2%;
+  left: 28.7%;
+}
+
+.los_gemelos {
+  position: absolute;
+  top: 15.45%;
+  left: 39.3%;
+}
+
+.lagash {
+  position: absolute;
+  top: 14.41%;
+  left: 72.15%;
+}
+
+.enki {
+  position: absolute;
+  top: 41.75%;
+  left: 23.55%;
+}
+
+.alejandria {
+  position: absolute;
+  top: 36.25%;
+  left: 46.55%;
+}
+
+.utu {
+  position: absolute;
+  top: 55.1%;
+  left: 24%;
+}
+
+.town_watch {
+  position: absolute;
+  top: 60.9%;
+  left: 46.2%;
+}
+
+.ilerda {
+  position: absolute;
+  top: 62%;
+  left: 58.55%;
+}
+
+.abela {
+  position: absolute;
+  top: 60.1%;
+  left: 62.9%;
+}
+
+.kish {
+  position: absolute;
+  top: 54.6%;
+  left: 71.4%;
+}
+
+.abismo_helmm {
+  position: absolute;
+  top: 80.3%;
+  left: 23.2%;
+}
+
+.vacceos {
+  position: absolute;
+  top: 72.7%;
+  left: 42.45%;
+}
+
+.hierros {
+  height: 7.1%;
+  position: absolute;
+  top: 69.2%;
+  left: 45.55%;
+}
+
+.outlaw_camp {
+  position: absolute;
+  top: 80.9%;
+  left: 48.9%;
+}
+
+.bastetania {
+  position: absolute;
+  top: 77.65%;
+  left: 59.2%;
+}
+
+.andosia {
+  position: absolute;
+  top: 71.85%;
+  left: 72.7%;
+}

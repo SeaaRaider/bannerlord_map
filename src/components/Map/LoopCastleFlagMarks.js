@@ -22,11 +22,7 @@ function LoopCastles() {
     "andosia",
   ];
 
-  return (
-      castles.map((castle) => (
-        <FlagClickableMarks location={castle} />
-      ))
-  );
+  return castles.map((castle) => <FlagClickableMarks location={castle} />);
 }
 
 export default LoopCastles;

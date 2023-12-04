@@ -1,7 +1,12 @@
 import classes from "./ResourceList.module.css";
 import { RESOURCES_DATA } from "../../../resourceData";
 
-function ResourceList({visibility, setVisibility }) {
+function ResourceList({ visibility, setVisibility }) {
+  var actives = [];
+
+  Object.values(visibility).map((val, i) => {
+    actives[i] = val;
+  });
 
   const resourceHandler = (i) => {
     if (i == "0") {
@@ -16,6 +21,7 @@ function ResourceList({visibility, setVisibility }) {
         });
       }
     }
+
     if (i == "1") {
       setVisibility({
         ...visibility,
@@ -28,6 +34,7 @@ function ResourceList({visibility, setVisibility }) {
         });
       }
     }
+
     if (i == "2") {
       setVisibility({
         ...visibility,
@@ -40,6 +47,7 @@ function ResourceList({visibility, setVisibility }) {
         });
       }
     }
+
     if (i == "3") {
       setVisibility({
         ...visibility,
@@ -52,6 +60,7 @@ function ResourceList({visibility, setVisibility }) {
         });
       }
     }
+
     if (i == "4") {
       setVisibility({
         ...visibility,
@@ -71,8 +80,9 @@ function ResourceList({visibility, setVisibility }) {
       {RESOURCES_DATA.map((res, i) => (
         <li
           key={res.id}
-          id={res.id}
-          className={classes.bar + " " + classes.active}
+          className={
+            classes.bar + " " + (actives[i] ? classes.active : classes.inactive)
+          }
           onClick={() => resourceHandler(i)}
         >
           <img className={classes.icon} src={res.image} />
