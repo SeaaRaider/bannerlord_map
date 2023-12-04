@@ -1,10 +1,10 @@
-import classes from "./Menu.module.css"
+import classes from "./Menu.module.css";
 import ResourceList from "./ResourceList/ResourceList";
 
-function Menu({visibility, setVisibility}) {
+function Menu({ visibility, setVisibility }) {
   return (
     <div className={"col col-lg-2 " + classes.menu}>
-        <ResourceList visibility={visibility} setVisibility={setVisibility}/>
+      <ResourceList visibility={visibility} setVisibility={setVisibility} />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import classes from "./FlagClickableMarks.module.css"
+import classes from "./FlagClickableMarks.module.css";
 import Popup from "./Popup/Popup";
 
 function Flag(props) {
@@ -17,7 +17,10 @@ function Flag(props) {
 
   return (
     <div>
-      <div className={classes[props.location] + " " + classes.flag} onClick={PopupHandler}></div>
+      <div
+        className={classes[props.location] + " " + classes.flag}
+        onClick={PopupHandler}
+      ></div>
       <div>{popupIsOpen && <Popup location={props.location} />}</div>
     </div>
   );
