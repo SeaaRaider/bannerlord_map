@@ -23,11 +23,9 @@ function LoopCastles() {
   ];
 
   return (
-    <div>
-      {castles.map((castle) => (
+      castles.map((castle) => (
         <FlagClickableMarks location={castle} />
-      ))}
-    </div>
+      ))
   );
 }
 
