@@ -1,0 +1,148 @@
+.icon {
+  position: absolute;
+  width: 2%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 80px -2px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 80px -2px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 80px -2px rgba(255, 255, 255, 1);
+}
+
+.bank0 {
+  top: 13%;
+  left: 35%;
+}
+
+.bank1 {
+  top: 19.5%;
+  left: 61%;
+}
+
+.bank2 {
+  top: 74%;
+  left: 51.3%;
+}
+
+.bank3 {
+  top: 57.9%;
+  left: 65.8%;
+}
+
+.bank4 {
+  top: 5.4%;
+  left: 70.2%;
+}
+
+.gold_bar0 {
+  top: -5%;
+  left: 0%;
+}
+
+.gold_ore0 {
+  top: 33%;
+  left: 51%;
+}
+
+.gold_ore1 {
+  top: 63%;
+  left: 31.6%;
+}
+
+.gold_ore2 {
+  top: 7.5%;
+  left: 37.6%;
+}
+
+.gold_ore3 {
+  top: 17%;
+  left: 66%;
+}
+
+.gold_ore4 {
+  top: 38%;
+  left: 39%;
+}
+
+.gold_ore5 {
+  top: 30.2%;
+  left: 56.5%;
+}
+
+.gold_ore6 {
+  top: 33%;
+  left: 72%;
+}
+
+.gold_ore7 {
+  top: 75.3%;
+  left: 63.1%;
+}
+
+.iron_ore0 {
+  top: 6%;
+  left: 36.8%;
+}
+
+.iron_ore1 {
+  top: 16%;
+  left: 65%;
+}
+
+.iron_ore2 {
+  top: 34%;
+  left: 52.5%;
+}
+
+.iron_ore3 {
+  top: 32%;
+  left: 71%;
+}
+
+.iron_ore4 {
+  top: 53.3%;
+  left: 39.7%;
+}
+
+.iron_ore5 {
+  top: 74.3%;
+  left: 62.1%;
+}
+
+.iron_ore6 {
+  top: 43.5%;
+  left: 57.8%;
+}
+
+.stone0 {
+  top: 10%;
+  left: 43.1%;
+}
+
+.stone1 {
+  top: 25.9%;
+  left: 27.3%;
+}
+
+.stone2 {
+  top: 37.4%;
+  left: 44.5%;
+}
+
+.stone3 {
+  top: 45.8%;
+  left: 69%;
+}
+
+.stone4 {
+  top: 57.1%;
+  left: 33.3%;
+}
+
+.stone5 {
+  top: 65.7%;
+  left: 51.1%;
+}
+
+.stone6 {
+  top: 68.8%;
+  left: 28.5%;
+}

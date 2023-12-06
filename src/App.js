@@ -1,8 +1,14 @@
 import { useState } from "react";
+import {
+  Routes,
+  Route
+} from "react-router-dom";
 
+import SomeMap from "./pages/SomeMap/Map";
+import GofurkMap from "./pages/GofurkMap/Map";
 import Map from "./components/Map/Map";
 import Menu from "./components/Menu/Menu";
-import LoopResourceMarks from "./components/Map/LoopResourceMarks";
+import MapNavbar from "./components/MapNavbar/MapNavbar";
 
 function App() {
   const [visibility, setVisibility] = useState({
@@ -14,13 +20,19 @@ function App() {
   });
 
   return (
-    <div className="row mx-5 my-5">
-      <Menu visibility={visibility} setVisibility={setVisibility} />
-      <div className="col position-relative">
-        <Map />
-        <LoopResourceMarks visibility={visibility} />
+    // <div className="background">
+      <div className="row mx-0 my-2">
+        <MapNavbar/>
+        <Menu visibility={visibility} setVisibility={setVisibility} />
+        <div className="col position-relative">
+          <Routes>
+            <Route path="/" element={<Map visibility={visibility}/>}/>
+            <Route path="/Gofurk" element={<GofurkMap visibility={visibility}/>}/>
+            <Route path="/SomeMap" element={<SomeMap visibility={visibility}/>}/>
+          </Routes>
+        </div>
       </div>
-    </div>
+    // </div>
   );
 }
 
