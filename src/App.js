@@ -1,14 +1,13 @@
 import { useState } from "react";
 import {
-  Routes,
-  Route
+  createBrowserRouter,
+  RouterProvider,
 } from "react-router-dom";
 
-import SomeMap from "./pages/SomeMap/Map";
+import VascongadasMap from "./pages/VscongadasMap/Map";
 import GofurkMap from "./pages/GofurkMap/Map";
-import Map from "./components/Map/Map";
-import Menu from "./components/Menu/Menu";
-import MapNavbar from "./components/MapNavbar/MapNavbar";
+import Layout from "./components/Layout";
+import PathConstants from "./routes/pathConstants";
 
 function App() {
   const [visibility, setVisibility] = useState({
@@ -19,20 +18,27 @@ function App() {
     stone: false,
   });
 
+  const router = createBrowserRouter([
+    {
+      element: <Layout visibility={visibility} setVisibility={setVisibility}/>,
+
+      errorElement: <GofurkMap visibility={visibility} />, //replace with error page next time
+
+      children: [
+        {
+          path: PathConstants.GOFURK,
+          element: <GofurkMap visibility={visibility} />,
+        },
+        {
+          path: PathConstants.VASCONGADAS,
+          element: <VascongadasMap visibility={visibility} />,
+        },
+      ],
+    },
+  ]);
+
   return (
-    // <div className="background">
-      <div className="row mx-0 my-2">
-        <MapNavbar/>
-        <Menu visibility={visibility} setVisibility={setVisibility} />
-        <div className="col position-relative">
-          <Routes>
-            <Route path="/" element={<Map visibility={visibility}/>}/>
-            <Route path="/Gofurk" element={<GofurkMap visibility={visibility}/>}/>
-            <Route path="/SomeMap" element={<SomeMap visibility={visibility}/>}/>
-          </Routes>
-        </div>
-      </div>
-    // </div>
+    <RouterProvider router={router}/>
   );
 }
 

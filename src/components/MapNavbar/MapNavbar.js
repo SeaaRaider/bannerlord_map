@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom"
+
+import PathConstants from "../../routes/pathConstants";
 import classes from "./MapNavbar.module.css";
 
 function MapNavbar() {
   return (
-    <div className={classes.menuBar}>
-        <a href="/Gofurk" className={classes.button}>GOFURK</a>
-        <a href="/SomeMap" className={classes.button}>MAP</a>
-    </div>
+    <ul className={classes.menuBar}>
+      <li><Link to={PathConstants.GOFURK}>GOFURK</Link></li>
+      <li><Link to={PathConstants.VASCONGADAS}>VASCONGADAS</Link></li>
+    </ul>
   );
 }
 

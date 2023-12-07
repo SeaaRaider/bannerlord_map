@@ -1,12 +1,15 @@
-import LoopCastleFlagMarks from "./LoopCastleFlagMarks";
-import LoopResourceMarks from "./LoopResourceMarks"
+import GetFlagClickableAreas from "../../components/Map/FlagClickableMarks/GetFlagClickableAreas";
+import GenerateResourceMarkers from "../../components/Map/GenerateResourceMarkers"
+
+import { RESOURCES_DATA } from "./resourceData"
 
 function GofurkMap({visibility}) {
+
   return (
     <div>
-      <LoopCastleFlagMarks />
-      <LoopResourceMarks visibility={visibility}/>
-      <img src="images/Gofurk.jpg" className="mw-100" />
+      <GetFlagClickableAreas />
+      <GenerateResourceMarkers visibility={visibility} resData={RESOURCES_DATA}/>
+      <img src="images/Gofurk.jpg" className="mw-100" alt="Error"/>
     </div>
   );
 }

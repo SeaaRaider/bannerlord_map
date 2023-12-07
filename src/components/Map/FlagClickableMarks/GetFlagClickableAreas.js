@@ -1,6 +1,6 @@
-import FlagClickableMarks from "./FlagClickableMarks/FlagClickableMarks";
+import GenerateFlagClickableArea from "./GenerateFlagClickableArea";
 
-function LoopCastles() {
+export default function PassCastles(props) {
   let castles = [
     "umma",
     "mardin",
@@ -22,7 +22,5 @@ function LoopCastles() {
     "andosia",
   ];
 
-  return castles.map((castle) => <FlagClickableMarks location={castle} />);
+  return castles.map((castle) => <GenerateFlagClickableArea location={castle} />);
 }
-
-export default LoopCastles;

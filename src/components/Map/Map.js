@@ -1,12 +1,12 @@
-import LoopCastleFlagMarks from "./LoopCastleFlagMarks";
-import LoopResourceMarks from "./LoopResourceMarks"
+import GenerateFlagClickableArea from "./FlagClickableMarks/GenerateFlagClickableArea";
+import GenerateResourceMarkers from "./GenerateResourceMarkers"
 
 function Map({visibility}) {
   return (
     <div>
-      <LoopCastleFlagMarks/>
-      <LoopResourceMarks  visibility={visibility}/>
-      <img src="images/PE_map.jpg" className="mw-100" />
+      <GenerateFlagClickableArea/>
+      <GenerateResourceMarkers  visibility={visibility}/>
+      <img src="images/PE_map.jpg" className="mw-100" alt="Error"/>
     </div>
   );
 }

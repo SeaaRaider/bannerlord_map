@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import classes from "./FlagClickableMarks.module.css";
+import classes from "./GenerateFlagClickableArea.module.css";
 import Popup from "./Popup/Popup";
 
-function Flag(props) {
+export default function GenerateFlagClickableArea(props) {
   const [popupIsOpen, setPopupIsOpen] = useState(false);
 
   function PopupHandler() {
@@ -25,4 +25,3 @@ function Flag(props) {
     </div>
   );
 }
-export default Flag;

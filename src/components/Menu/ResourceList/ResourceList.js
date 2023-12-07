@@ -1,5 +1,5 @@
 import classes from "./ResourceList.module.css";
-import { RESOURCES_DATA } from "../../../resourceData";
+import { RESOURCES_DATA } from "../../../pages/GofurkMap/resourceData";
 
 function ResourceList({ visibility, setVisibility }) {
   var actives = [];
@@ -85,7 +85,7 @@ function ResourceList({ visibility, setVisibility }) {
           }
           onClick={() => resourceHandler(i)}
         >
-          <img className={classes.icon} src={res.image} />
+          <img className={classes.icon} src={res.image} alt="Error"/>
           {res.name}
         </li>
       ))}
